@@ -7,4 +7,40 @@ comment
 .fancy-header {
     color: purple; /* single line comment */
     text-decoration: underline;
+    text-align: center ;
+}
+
+h1, h2 {
+    color: green;
+    text-decoration: underline;
+}
+
+html {
+    background-color: orange;
+}
+
+ul li {
+    color:magenta;
+    list-style: none;
+}
+ ul li::before {
+     color: #006b6e;
+     content: (Boom!);
+     font-size: 1em;
+     padding-right: 1.1225em;
+     postion: relative;
+     top: 0em;
+ }
+
+ol li {
+    color:blue;
+    list-style: none;
+}
+ol li::before {
+    color: #006b6e;
+    text: (%303);
+    font-size: 1em;
+    padding-right: 1.1225em;
+    postion: relative;
+    top: 0em;
 }
