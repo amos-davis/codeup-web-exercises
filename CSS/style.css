@@ -10,22 +10,28 @@ comment
     text-align: center ;
 }
 
+* {
+    font-size: x-small;
+}
+
+body { /*
+    background-image: url(http://cliparts.co/cliparts/di4/5ae/di45aeL4T.jpg);
+ */ background-color: orange;
+}
+
 h1, h2 {
     color: green;
     text-decoration: underline;
 }
 
-html {
-    background-color: orange;
-}
-
 ul li {
     color:magenta;
-    list-style: none;
+    list-style-type: lower-alpha;
 }
- ul li::before {
-     color: #006b6e;
-     content: (Boom!);
+
+ul li::before {
+     color: black;
+     content: (/202);
      font-size: 1em;
      padding-right: 1.1225em;
      postion: relative;
@@ -34,13 +40,33 @@ ul li {
 
 ol li {
     color:blue;
-    list-style: none;
+    list-style-type: circle;
 }
 ol li::before {
-    color: #006b6e;
-    text: (%303);
+    background: ;
     font-size: 1em;
     padding-right: 1.1225em;
     postion: relative;
     top: 0em;
+}
+
+tr>td {
+    font-size: medium;
+    padding: 1em;
+}
+
+a:visited {
+    color: black;
+}
+
+a:unvisited {
+    color: brown;
+}
+
+a:active {
+    color: yellow;
+}
+
+a:hover {
+    color: blue;
 }
