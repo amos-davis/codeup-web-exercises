@@ -7,25 +7,34 @@ body, html {
     background-color: white;
 }
 
-div {
-    margin: 5em;
-    width: 10px;
-    height: 10px;
-    padding 5px;
+.boxes {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin: 5px;
+    width: 600px;
+    height: 30px;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-weight: normal;
 }
 
-.message message-info {
-    color: blue;
-}
+#message-info {
+    .text-primary;
+    .bg-info;
+    /*background-color: lightskyblue;
+} */
 
-.message message-success {
+#message-success {
     color: green;
+    .bg ;
 }
 
-.message message-warning {
+#message-warning {
     color: yellow;
+    background-color: lightgoldenrodyellow;
 }
 
-.message message-error {
+#message-error {
     color: red;
+    background-color: plum;
 }
