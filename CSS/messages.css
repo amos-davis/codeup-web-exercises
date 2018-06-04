@@ -10,7 +10,7 @@ body, html {
 .boxes {
     border: 1px solid lightgrey;
     border-radius: 5px;
-    margin: 5px;
+    margin: 8px;
     width: 600px;
     height: 30px;
     padding-top: 15px;
@@ -19,18 +19,21 @@ body, html {
 }
 
 #message-info {
-    .text-primary;
-    .bg-info;
-    /*background-color: lightskyblue;
-} */
+    color: blue;
+    background-color: lightskyblue;
+}
+
+.text-info {
+    color: brown;
+}
 
 #message-success {
     color: green;
-    .bg ;
+    background-color: lightgreen;
 }
 
 #message-warning {
-    color: yellow;
+    color: gray;
     background-color: lightgoldenrodyellow;
 }
 
