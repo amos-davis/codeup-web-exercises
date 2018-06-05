@@ -1,6 +1,7 @@
 @media screen and (min-device-width: 320px) {
     body {
         margin: auto;
+        align-content: center;
     }
 
     .alert-info {
@@ -10,7 +11,6 @@
         background-color: lightblue;
         padding: 15px;
         margin: 5px;
-        
     }
 
     h1 {
@@ -27,16 +27,12 @@
         margin-bottom: 2px;
         border-top: 3px solid white;
         border-bottom: 3px solid white;
-
     }
 
-    #main {
-        text-align: center;
+    .nav-links {
+        padding: 0;
     }
-
-    .sub-section {
-        text-align: center;
-    }
+    
 }
 
 
