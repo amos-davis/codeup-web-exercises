@@ -1,0 +1,46 @@
+@media screen and (min-device-width: 320px) {
+    body {
+        margin: auto;
+    }
+
+    .alert-info {
+        text-align: center;
+        border: 1px solid lightgrey;
+        height: 30px;
+        background-color: lightblue;
+        padding: 15px;
+        margin: 5px;
+        
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    ul li {
+        list-style-type: none;
+        text-align: center;
+        background-color: gray;
+        list-style-position: inside;
+        border: 1px solid white;
+        padding: 5px;
+        margin-bottom: 2px;
+        border-top: 3px solid white;
+        border-bottom: 3px solid white;
+
+    }
+
+    #main {
+        text-align: center;
+    }
+
+    .sub-section {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
