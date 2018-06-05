@@ -1,0 +1,31 @@
+.container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 768px;
+    height: 100%;
+    background-color: yellow;
+}
+
+.row-of-Halves {
+    width: 100%;
+}
+
+.row-of-Thirds{
+    width: 100%;
+}
+
+.row-of-Fourths {
+    width: 100%;
+}
+
+.row-of-Sixths {
+    width: 100%;
+}
+
+.row-of-Eighths {
+    width: 100%;
+}
+
+.column-one-half {
+    float: left;
+}
