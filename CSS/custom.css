@@ -1,0 +1,9 @@
+
+
+
+.jumbotron {
+    background-image: url("http://java.codeup.com/examples/bootstrap/pizza.png");
+    width: 100%;
+    box-sizing: 100%;
+}
+
