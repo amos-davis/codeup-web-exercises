@@ -38,42 +38,6 @@
     }
 }
 
-@media screen and (min-device-width: 960px) {
-    h1 {
-        float: left;
-    }
-
-    .nav-links {
-
-    }
-
-    body {
-        margin: auto;
-        align-content: center;
-        background-color: yellow;
-    }
-
-    .hidden-on-desktop {
-        display: none;
-    }
-
-    .nav-links li {
-        float: right;
-        display: inline-block;
-        margin-left: 15px;
-
-    }
-
-    .nav-links li a {
-        background: inherit;
-        margin: 0;
-        padding: 0;
-        /* display: inline-block; */
-    }
-
-    section
-}
-
 
 
 

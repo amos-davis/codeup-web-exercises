@@ -1,31 +1,53 @@
+body {
+    margin: 0;
+}
+
 .container {
-    margin: 0 auto;
+    margin: 0;
     width: 80%;
     max-width: 768px;
     height: 100%;
-    background-color: yellow;
+    background-color:;
 }
 
-.row-of-Halves {
-    width: 100%;
-}
-
-.row-of-Thirds{
-    width: 100%;
-}
-
-.row-of-Fourths {
-    width: 100%;
-}
-
-.row-of-Sixths {
-    width: 100%;
-}
-
-.row-of-Eighths {
-    width: 100%;
+.row {
+    width: 50%;
+    box-sizing: border-box;
+    background: #DDDDDD;
 }
 
 .column-one-half {
+    width: 50%;
     float: left;
+    box-sizing: border-box;
+    border: 1px solid red;
 }
+
+.column-one-third {
+    width: 33.33%;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.column-one-fourth {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid purple;
+}
+
+.column-one-sixth{
+    width: 16.66%;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid orange;
+}
+
+.column-one-eighth {
+    width: 12.5%;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid blue;
+}
+
