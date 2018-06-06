@@ -62,3 +62,18 @@ body {
     margin-bottom: 20px;
 }
 
+@media screen and (min-width:500px) {
+    body {
+        background-color: yellow;
+    }
+
+    .column-one-half {
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        border: 1px solid red;
+        background-color: blue;
+        margin-bottom: 20px;
+    }
+}
+
