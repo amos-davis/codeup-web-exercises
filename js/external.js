@@ -1,4 +1,4 @@
-"use strict"
+"use strict"     /*
 
 console.log("Hello from External JavaScript.");
 
@@ -33,5 +33,25 @@ var totalWeekPayForAmazon = parseInt(hoursWorkedForAmazon) * parseInt(AmazonHour
 
 var TotalWeeksPay = totalWeekPayForAmazon + totalWeekPayForFaceBook + totalWeekPayForGoogle;
 
-alert("Great Job! Your pay for the week is $" + TotalWeeksPay + ".");
+alert("Great Job! Your pay for the week is $" + TotalWeeksPay + ".");   */
+
+
+var premiumMember = alert("Is customer a premium member?");
+var numberOfItemsBought = confirm("Did customer buy 2 items or more?");
+var metRequiredBoughtItems = numberOfItemsBought;
+var applyProductOffer = metRequiredBoughtItems || premiumMember;
+
+if applyProductOffer = true {
+    alert('A product offer will be applied to your purchase. Happy shopping!');
+} else {
+    alert('Sorry, No product offers this time.');
+}
+
+
+
+
+
+
+
+
 
