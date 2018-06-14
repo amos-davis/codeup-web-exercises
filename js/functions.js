@@ -120,7 +120,7 @@ alert("Your total bill comes to only " + calculateTip());
  */
 function applyDiscount(priceBeforeDiscount, discountPercentage) {
      var discountinDollars =
-         
+
     return priceBeforeDiscount * discountPercentage;
 }
 
