@@ -1,4 +1,4 @@
-"use strict"     /*
+"use strict"
 
 console.log("Hello from External JavaScript.");
 
@@ -33,7 +33,7 @@ var totalWeekPayForAmazon = parseInt(hoursWorkedForAmazon) * parseInt(AmazonHour
 
 var TotalWeeksPay = totalWeekPayForAmazon + totalWeekPayForFaceBook + totalWeekPayForGoogle;
 
-alert("Great Job! Your pay for the week is $" + TotalWeeksPay + ".");   */
+alert("Great Job! Your pay for the week is $" + TotalWeeksPay + ".");
 
 
 var premiumMember = alert("Is customer a premium member?");
