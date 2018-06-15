@@ -15,26 +15,30 @@
  *
  * Can you refactor your code to use functions?
  // */
- var enteringNumberQuestion = confirm("Would you like to enter a number?");
-
-
-
+var enteringNumberQuestion = confirm("Would you like to enter a number?");
+// function numberConfirm(enteringNumberQuestion) {
+var numbergiven = prompt("Enter your number.");
 if (enteringNumberQuestion) {
-    var numbergiven = prompt("Enter your number.");
-    var evenResult = parseInt(numbergiven) % 2 == 0;
-    var oddResult = parseInt(numbergiven) % 2 == 1;
-    var numberAfterAddition = parseInt(numbergiven) + 100;
-} else if (evenResult)  {
-    alert("This is an even number");
-    alert("Your number + 100 = " + numberAfterAddition);
-    alert("This is also a positive number.");
-} else if (oddResult) {
-    alert("This is an odd number!");
-    alert("That number + 100 = " + numberAfterAddition);
-    alert("This is clearly an woops Number, man.");
-} else (!isNaN(numbergiven) {
-    alert("Don't try to fool me, that is not a number.");
-}
+        prompt("Enter your number.");
+    }
+
+        var evenResult = parseInt(numbergiven) % 2 == 0;
+        var oddResult = parseInt(numbergiven) % 2 == 1;
+        var numberAfterAddition = parseInt(numbergiven) + 100;
+
+    if (numbergiven === evenResult && numbergiven > 0) {
+        alert("This is an even number");
+        alert("Your number + 100 = " + numberAfterAddition);
+        alert("This is also a positive number.");
+    }
+    else if (numbergiven === oddResult) {
+        alert("This is an odd number!");
+        alert("That number + 100 = " + numberAfterAddition);
+        alert("This is clearly an Odd Number, man.");
+    }
+    else if (!isNaN === (numbergiven)) {
+        alert("Don't try to fool me, that is not a number.");
+    }
 
 
 /* ########################################################################## */
@@ -154,18 +158,36 @@ analyzeColor();
  * return value.
  */
 function calculateTotal(luckyNumber, totalAmt) {
-    var promotion0 = totalAmt;
-    var promotion1 = parseInt(totalAmt) * .10;
-    var promotion2 = 25;
-    var promotion3 = 35;
-    var promotion4 = 50;
-    var promotion5 = 100;
-    var totalAmt
-    if
-    return discountedPrice
+
+    var luckyNumber = value;
+    var luckyNumber = 2;
+    var luckyNumber = 3;
+    var luckyNumber = 4;
+    var luckyNumber;
+    // var promotion0 = number0 + ", $" + (totalAmt);
+    // var promotion1 = parseInt(totalAmt) * number1;
+    // var promotion2 = parseInt(totalAmt) * number2;
+    // var promotion3 = parseInt(totalAmt) * number3;
+    // var promotion4 = parseInt(totalAmt) * number4;
+    // var promotion5 = number5;
+
+    if (luckyNumber == 0) {
+        return "No discount. Pay full amount: $" + totalAmt
+    } else if (luckyNumber === 1) {
+        return (totalAmt * .10);
+    } else if (luckyNumber === 2) {
+        return (totalAmt * .20);
+    } else if (luckyNumber == 3) {
+        return (totalAmt * .35);
+    } else if (luckyNumber === 4) {
+        return (totalAmt * .50);
+    } else if (luckyNumber ==5) {
+        return "Your purchase is all free today!";
+    }
+
 }
 
-console.log(calculateTotal(x,x);
+console.log(calculateTotal(2, 100));
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 6.
