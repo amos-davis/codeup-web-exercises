@@ -15,31 +15,31 @@
  *
  * Can you refactor your code to use functions?
  // */
-var enteringNumberQuestion = confirm("Would you like to enter a number?");
-// function numberConfirm(enteringNumberQuestion) {
-var numbergiven = prompt("Enter your number.");
-if (enteringNumberQuestion) {
-        prompt("Enter your number.");
-    }
-
-        var evenResult = parseInt(numbergiven) % 2 == 0;
-        var oddResult = parseInt(numbergiven) % 2 == 1;
-        var numberAfterAddition = parseInt(numbergiven) + 100;
-
-    if (numbergiven === evenResult && numbergiven > 0) {
-        alert("This is an even number");
-        alert("Your number + 100 = " + numberAfterAddition);
-        alert("This is also a positive number.");
-    }
-    else if (numbergiven === oddResult) {
-        alert("This is an odd number!");
-        alert("That number + 100 = " + numberAfterAddition);
-        alert("This is clearly an Odd Number, man.");
-    }
-    else if (!isNaN === (numbergiven)) {
-        alert("Don't try to fool me, that is not a number.");
-    }
-
+// var enteringNumberQuestion = confirm("Would you like to enter a number?");
+// // function numberConfirm(enteringNumberQuestion) {
+// var numbergiven = prompt("Enter your number.");
+// if (enteringNumberQuestion) {
+//         prompt("Enter your number.");
+//     }
+//
+//         var evenResult = parseInt(numbergiven) % 2 == 0;
+//         var oddResult = parseInt(numbergiven) % 2 == 1;
+//         var numberAfterAddition = parseInt(numbergiven) + 100;
+//
+//     if (numbergiven === evenResult && numbergiven > 0) {
+//         alert("This is an even number");
+//         alert("Your number + 100 = " + numberAfterAddition);
+//         alert("This is also a positive number.");
+//     }
+//     else if (numbergiven === oddResult) {
+//         alert("This is an odd number!");
+//         alert("That number + 100 = " + numberAfterAddition);
+//         alert("This is clearly an Odd Number, man.");
+//     }
+//     else if (!isNaN === (numbergiven)) {
+//         alert("Don't try to fool me, that is not a number.");
+//     }
+//
 
 /* ########################################################################## */
 
@@ -88,8 +88,8 @@ if (enteringNumberQuestion) {
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color everytime the page loads)
-var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-var randomColor = colors[Math.floor(Math.random() * colors.length)];
+// var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+// var randomColor = colors[Math.floor(Math.random() * colors.length)];
 /**
  * TODO:
  * Pass the `randomColor` variable to your function and console.log the results.
@@ -130,11 +130,11 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * function to show it to the user.
  */
 
-function analyzeColor(input = prompt("Please enter a color...")) {
-        alert("The color you have chosen is " + input + ".");
-}
-
-analyzeColor();
+// function analyzeColor(input = prompt("Please enter a color...")) {
+//         alert("The color you have chosen is " + input + ".");
+// }
+//
+// analyzeColor();
 
 /* ########################################################################## */
 
@@ -158,36 +158,25 @@ analyzeColor();
  * return value.
  */
 function calculateTotal(luckyNumber, totalAmt) {
+    var discountedPrice;
 
-    var luckyNumber = value;
-    var luckyNumber = 2;
-    var luckyNumber = 3;
-    var luckyNumber = 4;
-    var luckyNumber;
-    // var promotion0 = number0 + ", $" + (totalAmt);
-    // var promotion1 = parseInt(totalAmt) * number1;
-    // var promotion2 = parseInt(totalAmt) * number2;
-    // var promotion3 = parseInt(totalAmt) * number3;
-    // var promotion4 = parseInt(totalAmt) * number4;
-    // var promotion5 = number5;
 
-    if (luckyNumber == 0) {
-        return "No discount. Pay full amount: $" + totalAmt
+    if (luckyNumber === 0) {
+        return discountedPrice = "No discount. Pay full amount: $" + (totalAmt);
     } else if (luckyNumber === 1) {
-        return (totalAmt * .10);
+        return discountedPrice = totalAmt * (.90);
     } else if (luckyNumber === 2) {
-        return (totalAmt * .20);
-    } else if (luckyNumber == 3) {
-        return (totalAmt * .35);
+        return discountedPrice = totalAmt * (.75);
+    } else if (luckyNumber === 3) {
+        return discountedPrice = totalAmt * (.65);
     } else if (luckyNumber === 4) {
-        return (totalAmt * .50);
-    } else if (luckyNumber ==5) {
-        return "Your purchase is all free today!";
+        return discountedPrice = totalAmt * (.50);
+    } else if (luckyNumber === 5) {
+        return discountedPrice = 0 + " dollars. Your purchase is all free today!";
     }
-
 }
 
-console.log(calculateTotal(2, 100));
+
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 6.
@@ -196,4 +185,6 @@ console.log(calculateTotal(2, 100));
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+ var luckyNumber = Math.floor(Math.random() * 6);
+
+console.log(calculateTotal(luckyNumber, 100));
