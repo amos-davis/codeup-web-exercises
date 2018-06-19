@@ -10,7 +10,7 @@ function showMultiplicatonTable(number) {
 showMultiplicatonTable(7);
 
 // For Loops: Number 3
-
+for (var randomNum = Math.floor(Math.random() * 200) + 20;
 
 
 
