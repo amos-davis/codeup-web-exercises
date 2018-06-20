@@ -1,25 +1,28 @@
 "use strict";
 // var random = Math.floor((Math.random()*50)+1);
-var input = prompt("Input and odd number between 1 and 50.");
-    console.log("Random odd number to skip is: " + input);
 
+while (true) {
+    var input = prompt("Input and odd number between 1 and 50.");
 
-for (var n = input; n < 60; n++) {
-    if (n > 51 || n !== parseInt(n)) {
-        console.log("That is not a valid input.");
+    if (input <= 50 && input % 2 !== 0 && input >= 1) {
         break;
     }
-    if (n % 2 === 0) {
-    continue;
-    }
+}
 
-    if (input === (n % 2 === 1)) {
-        console.log("Yikes! Skipping number: " + n);
+
+console.log("We are skipping your number of: " + input);
+
+
+for (var i = 1; i < 51; i++) {
+
+    if (i % 2 == 0) {
+        continue;
+    }
+      if (i == input)  {
+        console.log("Yikes! Skipping number: " + input);
     } else {
-        console.log("Here is an odd number: " + n);
-    }
-
-
+        console.log("This is an odd number: " + i);
+      }
 }
 
 
