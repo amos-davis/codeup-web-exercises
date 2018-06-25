@@ -1,42 +1,25 @@
 "use strict";
 
-(function (){
+(function () {
 
 
 
-function toggle(string) {
-    if (string) {
-        console.log(string.split(""));
-
-        var
-
-        for string.split() {
-            if (string.split("") === string.split("").toUpperCase()) {
-                console.log(string.split("").toLowerCase());
-            }
+var letterChange = function (string) {
+    var newLetters = "";
+    for (var i = 0; i < string.length; i++) {
+        if (string[i] === string[i].toLowerCase()) {
+            newLetters += string[i].toUpperCase();
+        } else {
+            newLetters += string[i].toLowerCase();
         }
+
+    console.log(newLetters);
     }
+};
 
-
-}
-
- console.log(toggle('Hello'));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+var text = "I hoPe ThIs WoRked!456";
+var SwapText = letterChange(text);
 
 
 })();
+
