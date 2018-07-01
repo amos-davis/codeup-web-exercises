@@ -16,12 +16,12 @@
 
 
 
-$('li').css('font-size', '20px');
-
-$('h1, p, li').css('background-color', 'aqua');
-
-$('h1').html();
-alert('here we GOOOOO!!!');
+// $('li').css('font-size', '20px');
+//
+// $('h1, p, li').css('background-color', 'aqua');
+//
+// $('h1').html();
+// alert('here we GOOOOO!!!');
 
 
 
@@ -35,17 +35,17 @@ alert('here we GOOOOO!!!');
      // --------------------------------------------------------
                 // Mouse Events Exercise
 
-// $('h1').click(function() {
-//     $(this).css('background-color', 'yellow');
-// })
-// //
-// $('p').dblclick(function() {
-//     $(this).css('font-size', '18px');
-// })
+$('h1').click(function() {
+    $(this).css('background-color', 'yellow');
+})
 //
-// $('li').hover(function() {
-//         $(this).css('background-color', 'red')
-//     },
-//     function () {
-//         $(this).css('background-color', 'black')
-//     })
+$('p').dblclick(function() {
+    $(this).css('font-size', '18px');
+})
+
+$('li').hover(function() {
+        $(this).css('background-color', 'red')
+    },
+    function () {
+        $(this).css('background-color', 'black')
+    })
