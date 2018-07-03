@@ -2,11 +2,20 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>JQuery Attributes and CSS</title>
+        <title>JQuery Effects</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
         <link rel="stylesheet" href="CSS/npCss.css">
     </head>
     <body>
+        <div id="Effects-div">
+           <h1>Would you like to sign uo for our newsletter?</h1>
+            <span><button>X</button></span>
+        </div>
+
+
         <h1>National Parks</h1>
+        <h2 class="fadeIn-Register">DO YOU WANT TO REGISTER FOR THIS SITE? I THINK YOU SHOULD.</h2>
         <a href="#" id="details">Toggle Stuff</a>
         <dl>
             <dt>What is the largest national park the U.S.?</dt>
@@ -38,7 +47,7 @@
             <li class="n">Denali</li>
             <li class="n">Everglades</li>
         </ul>
-        <h3>State Parks of Texas</h3>
+        <h3 id="state-parks-heading">State Parks of Texas</h3>
         <ul id="state-parks-texas">
             <li>Abilene</li>
             <li>Big Bend</li>
@@ -46,7 +55,7 @@
             <li>Davis Mountains</li>
             <li>Enchanted Rock</li>
         </ul>
-        <h3>National Parks Wildlife</h3>
+        <h3 id="wildlife-heading">National Parks Wildlife</h3>
         <ul id="national-parks-wildlife">
             <li>Giraffe</li>
             <li>Bears</li>
@@ -56,6 +65,9 @@
         </ul>
 
         <button id="btn-park" class="btn-flop"><strong>Park Button</strong></button>
+
+        <div class="alert alert-info" role="alert">Awww, shuckee duckee now! Lookout, there's a new sherriff in town!</div>
+
 
         <div id="">
             <img src="">
@@ -70,10 +82,21 @@
         </div>
         <button id="btn-pic3"></button>
 
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+
+        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    Is this going to work?
+                </div>
+            </div>
+        </div>
 
 
 
-
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
 
 
