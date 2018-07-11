@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -25,11 +25,79 @@
         <div id="map"></div>
 
 
-
-        <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxIPbNd4ljI6NdSyP5ugk4XoKDzw2VEZM&callback=initMap"-->
-                <!--async defer></script>-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <script src="js/weather_map.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxIPbNd4ljI6NdSyP5ugk4XoKDzw2VEZM"></script>
+        <script>
+
+
+            "use strict";
+
+            $.get("http://api.openweathermap.org/data/2.5/forecast", {
+                APPID: "794062c0afb12fc00e58b7aed4db7354",
+                lat: 29.9499,
+                lon: -90.0702,
+                q: "New Orleans, US",
+                units: "imperial"
+
+            }).done(function(data) {
+                var test = data.list[0].dt;
+                console.log(data);
+                // console.log(data.list[0].main.temp_max);
+
+
+                for (var i = 0; i < data.list.length - 20; i++) {
+                    var forecast = {
+                        TempMax: data.list[i].main.temp_max,
+                        TempMin: data.list[i].main.temp_min,
+                        Clouds: data.list[i].weather[0].description,
+                        // Rain: data.list[i].
+                        Humidity: data.list[i].main.humidity,
+                        Wind: Math.round(data.list[i].wind.speed),
+                        Pressure: data.list[i].main.pressure
+                    };
+                    if (i === 0) {
+                        $('#left-box').append('<p><h3>' + Math.round(forecast.TempMax)  + ' / ' + Math.round(forecast.TempMin) + '</h3></p>');
+                        $('#left-box').append('<p><strong>' + 'Clouds: ' + '</strong>' + forecast.Clouds + '</p>');
+                        $('#left-box').append('<p><strong>' + 'Humidity: ' + '</strong>' + forecast.Humidity + '</p>');
+                        $('#left-box').append('<p><strong>' + 'Wind: ' + '</strong>' + forecast.Wind + '</p>');
+                        $('#left-box').append('<p><strong>' + 'Pressure: ' + '</strong>' + forecast.Pressure + '</p>');
+                    } else if (i === 8) {
+                        $('#middle-box').append('<p><h3>' + Math.round(forecast.TempMax)  + ' / ' + Math.round(forecast.TempMin) + '</h3></p>');
+                        $('#middle-box').append('<p><strong>' + 'Rain: ' + '</strong>' + forecast.Clouds + '</p>');
+                        $('#middle-box').append('<p><strong>' + 'Humidity: ' + '</strong>' + forecast.Humidity + '</p>');
+                        $('#middle-box').append('<p><strong>' + 'Wind: ' + '</strong>' + forecast.Wind + '</p>');
+                        $('#middle-box').append('<p><strong>' + 'Pressure: ' + '</strong>' + forecast.Pressure + '</p>');
+                    } else if (i === 16) {
+                        $('#right-box').append('<p><h3>' + Math.round(forecast.TempMax)  + ' / ' + Math.round(forecast.TempMin) + '</h3></p>');
+                        $('#right-box').append('<p><strong>' + 'Rain: ' + '</strong>' + forecast.Rai + '</p>');
+                        $('#right-box').append('<p><strong>' + 'Humidity: ' + '</strong>' + forecast.Humidity + '</p>');
+                        $('#right-box').append('<p><strong>' + 'Wind: ' + '</strong>' + forecast.Wind + '</p>');
+                        $('#right-box').append('<p><strong>' + 'Pressure: ' + '</strong>' + forecast.Pressure + '</p>');
+                    } else {
+                        continue;
+                    }
+                }
+
+                function initMap() {
+                    var mapCanvas = document.getElementById('map');
+                    var mapOptions = {
+                        zoom: 5,
+                        // This sets the center of the map at our location
+                        center: {
+                            lat: 29.9499,
+                            lng: -90.0702
+                        }
+                    };
+                    // Render the map
+                    var map = new google.maps.Map(mapCanvas, mapOptions);
+
+                }
+                initMap();
+            });
+
+
+            // Set our map options
+        </script>
 
     </body>
 </html>

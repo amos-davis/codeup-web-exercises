@@ -13,19 +13,18 @@
 }
 
 #innerBox {
-    height: 175px;
-    width: 700px;
+    height: 177px;
+    width: 702px;
     background-color: white;
     border: 10px;
     border-color: black;
-    padding: 5px;
+
 }
 
 #left-box {
     text-align: center;
 
-    border: 10px;
-    border-color: black;
+    border: 2px solid darkgray;
     width: 230px;
     height: 175px;
     float: left;
@@ -35,8 +34,7 @@
 #middle-box {
     text-align: center;
     background-color: orange;
-    borderpx;
-    border-color: black;
+    border: 2px solid darkgray;
     width: 230px;
     height: 175px;
     float: left;
@@ -44,10 +42,12 @@
 
 #right-box {
     text-align: center;
-
-    border: 10px;
-    border-color: black;
+    border: 2px solid darkgray;
     width: 230px;
     height: 175px;
+    float: left;
+}
 
+#map {
+    height: 400px;
 }
