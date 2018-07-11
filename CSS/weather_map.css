@@ -1,0 +1,53 @@
+#top-heading {
+    text-indent: 12px;
+}
+
+#outerBox {
+    margin: 5px;
+    padding: 10px;
+    border: 1px;
+    border-color: #E6ECF0;
+    height: 300px;
+    width: 800px;
+    background-color: lightskyblue;
+}
+
+#innerBox {
+    height: 175px;
+    width: 700px;
+    background-color: white;
+    border: 10px;
+    border-color: black;
+    padding: 5px;
+}
+
+#left-box {
+    text-align: center;
+
+    border: 10px;
+    border-color: black;
+    width: 230px;
+    height: 175px;
+    float: left;
+    color: black;
+}
+
+#middle-box {
+    text-align: center;
+    background-color: orange;
+    borderpx;
+    border-color: black;
+    width: 230px;
+    height: 175px;
+    float: left;
+}
+
+#right-box {
+    text-align: center;
+
+    border: 10px;
+    border-color: black;
+    width: 230px;
+    height: 175px;
+
+}
