@@ -13,7 +13,7 @@
 }
 
 #innerBox {
-    height: 177px;
+    height: 190px;
     width: 702px;
     background-color: white;
     border: 10px;
@@ -22,32 +22,38 @@
 }
 
 #left-box {
+    font-size: small;
     text-align: center;
-
     border: 2px solid darkgray;
     width: 230px;
-    height: 175px;
+    height: 190px;
     float: left;
     color: black;
 }
 
 #middle-box {
+    font-size: small;
     text-align: center;
     background-color: orange;
     border: 2px solid darkgray;
     width: 230px;
-    height: 175px;
+    height: 190px;
     float: left;
 }
 
 #right-box {
+    font-size: small;
     text-align: center;
     border: 2px solid darkgray;
     width: 230px;
-    height: 175px;
+    height: 190px;
     float: left;
 }
 
 #map {
     height: 400px;
+}
+
+#lon-lat-btn {
+    background-color: greenyellow;
 }

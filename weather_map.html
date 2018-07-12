@@ -10,17 +10,16 @@
             <h2 id="top-heading">Weather Application</h2>
             <h3>New Orleans</h3>
             <div id="innerBox">
-                <div id="left-box">
-
-                </div>
-                <div id="middle-box">
-
-                </div>
-                <div id="right-box">
-
-                </div>
+                <div id="left-box"></div>
+                <div id="middle-box"></div>
+                <div id="right-box"></div>
             </div>
         </div>
+
+            <input id="latitude" placeholder="Enter Latitude" type="text">
+            <input id="longitude" placeholder="Enter Longitude" type="text">
+
+        <button id="lon-lat-btn">Submit Coordinates</button>
 
         <div id="map"></div>
 
@@ -32,14 +31,14 @@
 
             "use strict";
 
-            $.get("http://api.openweathermap.org/data/2.5/forecast", {
+    $.get("http://api.openweathermap.org/data/2.5/forecast", {
                 APPID: "794062c0afb12fc00e58b7aed4db7354",
                 lat: 29.9499,
                 lon: -90.0702,
                 q: "New Orleans, US",
                 units: "imperial"
 
-            }).done(function(data) {
+        }).done(function(data) {
                 var test = data.list[0].dt;
                 console.log(data);
                 // console.log(data.list[0].main.temp_max);
@@ -56,19 +55,19 @@
                         Pressure: data.list[i].main.pressure
                     };
                     if (i === 0) {
-                        $('#left-box').append('<p><h3>' + Math.round(forecast.TempMax)  + ' / ' + Math.round(forecast.TempMin) + '</h3></p>');
+                        $('#left-box').append('<p><h2>' + Math.round(forecast.TempMax)  + '\xB0' + ' / ' + Math.round(forecast.TempMin) + '\xB0' + '</h2></p>');
                         $('#left-box').append('<p><strong>' + 'Clouds: ' + '</strong>' + forecast.Clouds + '</p>');
                         $('#left-box').append('<p><strong>' + 'Humidity: ' + '</strong>' + forecast.Humidity + '</p>');
                         $('#left-box').append('<p><strong>' + 'Wind: ' + '</strong>' + forecast.Wind + '</p>');
                         $('#left-box').append('<p><strong>' + 'Pressure: ' + '</strong>' + forecast.Pressure + '</p>');
                     } else if (i === 8) {
-                        $('#middle-box').append('<p><h3>' + Math.round(forecast.TempMax)  + ' / ' + Math.round(forecast.TempMin) + '</h3></p>');
+                        $('#middle-box').append('<p><h2>' + Math.round(forecast.TempMax) + '\xB0'  + ' / ' + Math.round(forecast.TempMin) + '\xB0' + '</h2></p>');
                         $('#middle-box').append('<p><strong>' + 'Rain: ' + '</strong>' + forecast.Clouds + '</p>');
                         $('#middle-box').append('<p><strong>' + 'Humidity: ' + '</strong>' + forecast.Humidity + '</p>');
                         $('#middle-box').append('<p><strong>' + 'Wind: ' + '</strong>' + forecast.Wind + '</p>');
                         $('#middle-box').append('<p><strong>' + 'Pressure: ' + '</strong>' + forecast.Pressure + '</p>');
                     } else if (i === 16) {
-                        $('#right-box').append('<p><h3>' + Math.round(forecast.TempMax)  + ' / ' + Math.round(forecast.TempMin) + '</h3></p>');
+                        $('#right-box').append('<p><h2>' + Math.round(forecast.TempMax)+ '\xB0'  + ' / ' + Math.round(forecast.TempMin) + '\xB0' + '</h2></p>');
                         $('#right-box').append('<p><strong>' + 'Rain: ' + '</strong>' + forecast.Rai + '</p>');
                         $('#right-box').append('<p><strong>' + 'Humidity: ' + '</strong>' + forecast.Humidity + '</p>');
                         $('#right-box').append('<p><strong>' + 'Wind: ' + '</strong>' + forecast.Wind + '</p>');
@@ -90,11 +89,20 @@
                     };
                     // Render the map
                     var map = new google.maps.Map(mapCanvas, mapOptions);
-
+                    var marker = new google.maps.Marker({
+                        position: {
+                            lat: 29.447171,
+                            lng: -98.494849
+                        },
+                        map: map
+                })
+                    $('#lon-lat-btn').click(function () {
+                        $('#latitude').append(marker.position.lat);
+                        $('#longitude').append(marker.position.lng);
+                    })
                 }
                 initMap();
-            });
-
+        });
 
             // Set our map options
         </script>
