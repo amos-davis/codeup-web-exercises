@@ -47,8 +47,9 @@ let userEmailString = users.map(user => user.email);
 console.log(userEmailString);
 
 // Problem 4
-let reducedArrayObject = users.reduce((accumulation, currentObj) => {
-    accumulation[currentObj.id] = currentObj;
+let reducedArrayObject = users.reduce((accumulation, user) => {
+    accumulation+= user.id: user;
+        // [user.id] = user;
     return accumulation;
 }, {});
 
